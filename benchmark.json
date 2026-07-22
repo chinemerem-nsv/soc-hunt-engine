@@ -1,0 +1,37 @@
+{
+    "pipeline_status": "SUCCESS",
+    "execution_duration_seconds": 1.3099,
+    "infrastructure": {
+        "python_version": "3.14.6",
+        "duckdb_version": "1.5.4",
+        "platform": "win32"
+    },
+    "metrics": {
+        "total_lines_processed": 750000,
+        "total_valid_events": 749975,
+        "total_quarantined_events": 25,
+        "data_loss_rate_percent": 0.0
+    },
+    "source_breakdown": {
+        "auth": {
+            "accepted": 150014,
+            "quarantined": 5
+        },
+        "web": {
+            "accepted": 149878,
+            "quarantined": 5
+        },
+        "dns": {
+            "accepted": 149906,
+            "quarantined": 5
+        },
+        "firewall": {
+            "accepted": 150041,
+            "quarantined": 5
+        },
+        "endpoint": {
+            "accepted": 150136,
+            "quarantined": 5
+        }
+    }
+}

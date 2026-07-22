@@ -1,0 +1,26 @@
+{
+    "campaign_1": {
+        "name": "Initial Access & Brute-Force",
+        "primary_source": "auth",
+        "indicators": [
+            "10.41.50.8",
+            "198.51.100.124"
+        ]
+    },
+    "campaign_2": {
+        "name": "Lateral Movement",
+        "primary_source": "endpoint/firewall",
+        "indicators": [
+            "user314",
+            "user020"
+        ]
+    },
+    "campaign_3": {
+        "name": "C2 & Data Exfiltration",
+        "primary_source": "dns/web",
+        "indicators": [
+            "time.example.invalid",
+            "packages.example.invalid"
+        ]
+    }
+}

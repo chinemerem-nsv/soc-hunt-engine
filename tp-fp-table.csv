@@ -1,0 +1,4 @@
+campaign_id,indicator,classification,confidence,reasoning
+campaign_1,10.41.50.8,True Positive,High,Repeated auth failures followed by success targeting multiple accounts
+campaign_2,user314,True Positive,Medium,Anomalous high-frequency internal endpoint events
+campaign_3,time.example.invalid,True Positive,High,High-volume DNS polling indicative of beaconing/sync

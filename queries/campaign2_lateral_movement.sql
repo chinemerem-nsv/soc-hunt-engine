@@ -1,0 +1,2 @@
+SELECT canonical_name, source_ip, destination_ip, action, COUNT(*) as event_frequency 
+FROM normalized_events WHERE source IN ('endpoint', 'firewall') GROUP BY canonical_name, source_ip, destination_ip, action ORDER BY event_frequency DESC;

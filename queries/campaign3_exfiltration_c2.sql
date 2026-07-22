@@ -1,0 +1,2 @@
+SELECT canonical_name, source_ip, destination_ip, action, COUNT(*) as request_count 
+FROM normalized_events WHERE source IN ('dns', 'web') GROUP BY canonical_name, source_ip, destination_ip, action HAVING request_count > 10 ORDER BY request_count DESC;
